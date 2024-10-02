@@ -18,7 +18,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/reservation/send",
+        "https://mern-restaurant-backend.vercel.app/reservation/send",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
